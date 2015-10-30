@@ -19,6 +19,8 @@ function returnEvenSum () {
   	//000110 = 6
   	//------- XOR
   	//101110 = 46
+  	//modifying 4*10^6 with the number 46 allows for the conditional to be evaluated appropriately. It is therefore suspected that operating gate level logic (eg XOR) operations within a conditional does not generate an appropriate boolean value and thus the while statement continued going until the variables got so large and their value turned into the javascript symbol INFINITY (see video) 
+
 
   	//(problem2: new values are created first checked if they pass the condition, then new values are generated and those new values get sent to the even-sum-checker without being rechecked if they pass the condition => one simple solution is reversing the order between "create two new numbers" and "check if they are even")
 

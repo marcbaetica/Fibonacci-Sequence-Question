@@ -7,8 +7,8 @@ var evenSum = 0;
 (function () {
 	for (var i=0; true; i++) {
 		var current = findFibByIndex(i);	//build tree and calculate value for index
-		checkIfEven(current);				//if current sequence number is even add to sum
 		if (current>4*Math.pow(10,6)) break;	//break the loop once the numbers become larger than 4 million
+		checkIfEven(current);				//if current sequence number is even add to sum
 	}
 	//log the final sum in the console
 	console.log("\nThe final sum of even numbers is: " + evenSum);
