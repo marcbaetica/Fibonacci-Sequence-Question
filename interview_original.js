@@ -35,6 +35,8 @@ function returnEvenSum () {
   	console.log(variable2);
   }
 
+  //(problem3: since each loop iteration produces and compares 2 values what if variable1 passes as under 4 mil while variable2 doesnt pass and variable1 is eligible for being added to the evenSum -> solution make a final if statement at the end checking if variable1 by itself is under 4 mil and sending it to the "check if even" function)
+
   //returns the final evenSum
   return evenSum;
 }
